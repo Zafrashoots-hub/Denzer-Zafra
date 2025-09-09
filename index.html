@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .project-card {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sección de Cabecera -->
+    <header class="py-12 bg-white shadow-sm rounded-b-xl">
+        <div class="container text-center">
+            <img src="uploaded:WhatsApp Image 2025-09-09 at 11.05.16 AM.jpg" alt="Tu Foto de Perfil" class="w-36 h-36 mx-auto rounded-full object-cover mb-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Denzer Igor Zafra Diaz</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-6">
+                Asistente de produccion, Graffer y Grip
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#proyectos" class="px-6 py-2 bg-green-600 text-white font-medium rounded-full hover:bg-green-700 transition duration-300">Mis Proyectos</a>
+                <a href="#contacto" class="px-6 py-2 border border-green-600 text-green-600 font-medium rounded-full hover:bg-green-50 transition duration-300">Contáctame</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <main class="container py-12">
+        <section id="sobre-mi" class="card mb-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4 text-center">Sobre Mí</h2>
+            <p class="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
+                Mi objetivo es aplicar en mi vida profesional los valores que se me han inculcado a lo largo de las experiencias que he tenido, dándole un toque de familiaridad con fin de acercar al equipo y hacerles sentir entendidos y en confianza.
+            </p>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades" class="card mb-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Mis Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg">Proactividad</h3>
+                    <p class="text-sm text-gray-500">Siempre buscando nuevas ideas y anticipando soluciones aportando propuestas creativas.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg">Empatía</h3>
+                    <p class="text-sm text-gray-500">Capaz de comprender al equipo y sus diferentes perspectivas para crear un ambiente colaborativo en cada proyecto.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg">Responsabilidad</h3>
+                    <p class="text-sm text-gray-500">Capaz de cumplir objetivos asegurando calidad y puntualidad.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-medium text-lg">Aprendiz constante</h3>
+                    <p class="text-sm text-gray-500">Siempre dispuesto a adquirir nuevas herramientas y experiencias que enriquezcan mi repertorio</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Proyectos Destacados</h2>
+            
+            <!-- Proyecto 1 -->
+            <div class="card project-card mb-6">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/e0f2fe/0369a1?text=Proyecto+1" alt="Imagen del Proyecto 1" class="w-full h-auto rounded-lg object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Nombre del Proyecto</h3>
+                    <p class="text-gray-600 mb-4">
+                        Descripción detallada del proyecto. Explica el problema que resolviste, tu rol, las tecnologías que utilizaste (HTML, CSS, JavaScript) y los resultados obtenidos.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="card project-card mb-6">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/e0f2fe/0369a1?text=Proyecto+2" alt="Imagen del Proyecto 2" class="w-full h-auto rounded-lg object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Nombre del Proyecto</h3>
+                    <p class="text-gray-600 mb-4">
+                        Descripción detallada del segundo proyecto. Explica cómo fue el proceso, tus responsabilidades y los logros.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Figma</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Illustrator</span>
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300">Ver Proyecto</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="card text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contáctame</h2>
+            <p class="text-gray-600 mb-6 max-w-xl mx-auto">
+                Estoy disponible para nuevos proyectos y oportunidades. ¡No dudes en escribirme!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="mailto:tu.correo@email.com" class="px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300">Enviar un Email</a>
+                <a href="#" class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition duration-300">LinkedIn</a>
+                <a href="#" class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition duration-300">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
